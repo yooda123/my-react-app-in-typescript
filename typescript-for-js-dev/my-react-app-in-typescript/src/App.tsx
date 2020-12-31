@@ -1,4 +1,6 @@
 import React from 'react';
+// import Counter from './Counter';
+import CounterWithReducer from './CounterWithReducer';
 
 interface AppProps {
   message?: string;
@@ -7,7 +9,8 @@ interface AppProps {
 }
 
 const App: React.FC<AppProps> = ({message, name}) => {
-  return <div>{message} by {name}</div>;
+  // return <div>{message} by {name}</div>;
+  return <div><CounterWithReducer /></div>;
 };
 
 App.defaultProps = {
